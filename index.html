@@ -206,9 +206,24 @@
 </nav>
 <!-- end navbar -->
 
-<style>body {
+<style>
+body {
   padding-top: 88px; /* adjust value depending on your navbar height */
-}</style>
+}
+/* Default styles for larger screens */
+body {
+  overflow-y: auto; /* Allow scroll on larger screens */
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* Hide vertical scrollbar on mobile */
+  }
+}
+
+
+</style>
 
 
 
