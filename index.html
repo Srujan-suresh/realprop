@@ -302,7 +302,7 @@ body {
   </div>
 
   <div class="hero-image">
-    <img src="images/Gemini_Generated_Image_99njwh99njwh99nj.png" style="height: 460px;" alt="Residential project image" />
+    <img src="images/looks-like-elegant-living-room-with-yellow-lights.jpg" style="height: 460px;" alt="Residential project image" />
   </div>
 </section>
 
@@ -598,7 +598,58 @@ body {
 
 </section>
 
+<style>/* ---------- MOBILE RESPONSIVE FIX ---------- */
 
+/* Stack property-wrapper columns on mobile */
+@media (max-width: 768px) {
+    .property-wrapper {
+        flex-direction: column !important;
+        width: 95% !important;
+        margin: 15px auto !important;
+    }
+
+    .properties,
+    .search-box {
+        width: 100% !important;
+        flex: none !important;
+    }
+
+    /* Property card becomes vertical */
+    .property-card {
+        flex-direction: column !important;
+    }
+
+    .property-card img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Buttons wrap nicely */
+    .properties div button {
+        margin-bottom: 10px !important;
+    }
+}
+
+/* Gallery section responsiveness */
+@media (max-width: 768px) {
+    .recent-gallery .row.align-items-center {
+        text-align: center;
+    }
+
+    .recent-gallery .inner .col-md-4 {
+        width: 50% !important;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .recent-gallery .inner .col-md-4 {
+        width: 100% !important;
+    }
+}
+</style>
+
+<div style="height:100px; width:100%; background:#fff;"></div>
 
 
 
@@ -606,23 +657,78 @@ body {
   <div class="container">
     <div class="row text-center wow fadeInUp">
       <div class="col-12">
-        <!-- <b>09</b> -->
         <h4><span>Our</span> Trusted Associations</h4>
         <h3>Partnered with Bangalore’s Top Builders</h3>
       </div>
     </div>
 
-    <div class="row logos">
-      <div class="col-md-2 col-4 wow fadeInUp"><img src="images/shobha.jpeg" alt="Sobha"></div>
-      <div class="col-md-2 col-4 wow fadeInUp"><img src="images/brigade-logo_horizontal-2048px.png" alt="Brigade"></div>
-      <div class="col-md-2 col-4 wow fadeInUp"><img src="images/Godrej_new_logo_1732796773986_1732796776288.avif" alt="Godrej"></div>
-      <div class="col-md-2 col-4 wow fadeInUp"><img src="images/pridegroup_bangalore_logo.jpeg" alt="Pride"></div>
-      <div class="col-md-2 col-4 wow fadeInUp"><img src="images/purvankara.png" alt="Puravankara"></div>
-      <div class="col-md-2 col-4 wow fadeInUp"><img src="images/Logos_June_2020_Provident.png"  style="margin-top: 50px;"   alt="Provident"></div>
+    <div class="logo-slider">
+      <div class="logo-track">
+        <!-- Duplicate logos for seamless loop -->
+        <div class="logo-box"><img src="images/shobha.jpeg" alt=""></div>
+        <div class="logo-box"><img src="images/brigade-logo_horizontal-2048px.png" alt=""></div>
+        <div class="logo-box"><img src="images/Godrej_new_logo_1732796773986_1732796776288.avif" alt=""></div>
+        <div class="logo-box"><img src="images/pridegroup_bangalore_logo.jpeg" alt=""></div>
+        <div class="logo-box"><img src="images/purvankara.png" alt=""></div>
+        <div class="logo-box"><img src="images/Logos_June_2020_Provident.png" alt=""></div>
+
+        <!-- Duplicate again for infinite scrolling -->
+        <div class="logo-box"><img src="images/shobha.jpeg" alt=""></div>
+        <div class="logo-box"><img src="images/brigade-logo_horizontal-2048px.png" alt=""></div>
+        <div class="logo-box"><img src="images/Godrej_new_logo_1732796773986_1732796776288.avif" alt=""></div>
+        <div class="logo-box"><img src="images/pridegroup_bangalore_logo.jpeg" alt=""></div>
+        <div class="logo-box"><img src="images/purvankara.png" alt=""></div>
+        <div class="logo-box"><img src="images/Logos_June_2020_Provident.png" alt=""></div>
+      </div>
     </div>
   </div>
 </section>
 
+
+<style>/* Wrapper hides overflow */
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* The moving track */
+.logo-track {
+  display: flex;
+  width: calc(250px * 12); /* box width * number of boxes */
+  animation: scrollLeft 25s linear infinite;
+}
+
+/* Individual logo box */
+.logo-box {
+  flex: 0 0 250px;        /* width of each box */
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 0 15px;
+  border-radius: 10px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Logo styling */
+.logo-box img {
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+/* Keyframes to scroll left */
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
+
+
+<div style="height:100px; width:100%; background:#fff;"></div>
 
 
 <!-- <section class="footer-bar">
