@@ -58,7 +58,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  color: #26282b;
+  color: #3668a3;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -2896,7 +2896,7 @@ button[type=submit] {
   flex-wrap: wrap;
   padding-top: 180px;
   padding-bottom: 30px;
-  background: #26282b;
+  background: #3668a3;
 }
 .footer p {
   color: #fff;
