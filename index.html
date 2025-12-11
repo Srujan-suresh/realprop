@@ -53,151 +53,223 @@
 <body>
 
 <nav class="navbar">
-    <div class="nav-container">
-        <div class="logo">
-            <img src="images/realpropservice.png" alt="Real Prop Service Logo">
-        </div>
-
-        <ul class="nav-menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="#">RESIDENTIAL</a></li>
-            <li><a href="#">COMMERCIAL</a></li>
-            <li><a href="facilities.html">SERVICES</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+  <div class="nav-container">
+    <div class="logo">
+      <img src="images/realpropservice.png" alt="Real Prop Service Logo">
     </div>
+
+    <!-- HAMBURGER ICON -->
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <ul class="nav-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="#">RESIDENTIAL</a></li>
+      <li><a href="#">COMMERCIAL</a></li>
+      <li><a href="facilities.html">SERVICES</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
 </nav>
-
-
 
 <!-- HERO SECTION -->
 <section class="hero">
-    <div class="left-section">
-        <h3>REAL PROP SERVICE</h3>
-        <h1>Find Your<br>Dream Home<br>With Real Prop Service!</h1>
-        <p>Authorized Channel Partner for Bangalore’s Top Builders</p>
-  
+  <div class="left-section">
+    <h3>REAL PROP SERVICE</h3>
+    <h1>Find Your<br>Dream Home<br>With Real Prop Service!</h1>
+    <p>Authorized Channel Partner for Bangalore’s Top Builders</p>
+  </div>
 
-
-        <!-- <a href="#" class="cta">GET A CALL BACK IN 5 MINUTES</a> -->
-    </div>
-
-    <div class="right-section">
-        <img src="images/parth-savani-Db4VBBjI5_A-unsplash (1).jpg" alt="Dream Home">
-    </div>
+  <div class="right-section">
+    <img src="images/parth-savani-Db4VBBjI5_A-unsplash (1).jpg" alt="Dream Home">
+  </div>
 </section>
 
-</body>
-</html>
+<script>
+  function toggleMenu() {
+    document.querySelector(".nav-menu").classList.toggle("active");
+  }
+</script>
+
 <style>* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
-    background: #fff;
+  background: #fff;
 }
 
 /* NAVBAR */
 .navbar {
-    width: 100%;
-    padding: 15px 50px;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  width: 100%;
+  padding: 15px 50px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
 }
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;   /* ensures logo and menu align in one line */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo img {
-    height: 60px;
-    object-fit: contain;
+  height: 60px;
 }
 
 /* NAV MENU */
 .nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 35px;             /* spacing between menu items */
-    margin: 0;
-    padding: 0;
-    margin-left: 185px;
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin-left: 185px;
 }
 
 .nav-menu li a {
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    color: #000;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
 }
 
 .nav-menu li a:hover {
-    color: #3668a3;        /* optional highlight */
+  color: #3668a3;
 }
 
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 5px;
+}
 
 /* HERO SECTION */
 .hero {
-    display: flex;
-    height: 100vh;
-    padding-top: 100px; /* adjust for fixed navbar */
+  display: flex;
+  height: 100vh;
+  padding-top: 100px;
 }
 
 .left-section {
-    width: 45%;
-    background: #1f4e82; /* BLUE SECTION */
-    color: #fff;
-    padding: 80px 60px;
+  width: 45%;
+  background: #1f4e82;
+  color: #fff;
+  padding: 80px 60px;
 }
 
 .left-section h3 {
-    letter-spacing: 1px;
-    font-size: 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
 .left-section h1 {
-    margin-top: 20px;
-    font-size: 48px;
-    line-height: 1.2;
+  margin-top: 20px;
+  font-size: 48px;
+  line-height: 1.2;
 }
 
 .left-section p {
-    margin-top: 20px;
-    font-size: 15px;
+  margin-top: 20px;
+  font-size: 15px;
 }
 
-.cta {
-    display: inline-block;
-    margin-top: 35px;
-    background: #f0c042;
-    color: #000;
-    padding: 12px 25px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 4px;
-}
-
-/* RIGHT SIDE IMAGE */
 .right-section {
-    width: 55%;
+  width: 55%;
 }
 
 .right-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------------------------ */
+/*        MOBILE RESPONSIVE       */
+/* ------------------------------ */
+@media(max-width: 992px) {
+  .nav-menu {
+    margin-left: 50px;
+    gap: 20px;
+  }
+
+  .left-section h1 {
+    font-size: 38px;
+  }
+}
+
+@media(max-width: 768px) {
+  /* HAMBURGER SHOWS */
+  .hamburger {
+    display: block;
+  }
+
+  /* NAV MENU DROPDOWN */
+  .nav-menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
+    text-align: center;
+    padding: 20px 0;
+    gap: 20px;
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li a {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  /* HERO STACK VERTICAL */
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .left-section {
+    padding: 40px 30px;
+  }
+
+  .left-section h1 {
+    font-size: 32px;
+  }
+
+  .right-section img {
+    height: 300px;
     object-fit: cover;
+  }
+}
+
+@media(max-width: 480px) {
+  .left-section h1 {
+    font-size: 28px;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
 }
 </style>
-
 
 <!-- end slider -->
 
@@ -218,11 +290,12 @@ body {
   </div>
 
   <div class="hero-image">
-    <img src="newimg/BREN IMPERIA/bren_imperia_block_i-harlur-bengaluru-bren_corporation.avif" style="height: 460px;" alt="Residential project image" />
+    <img src="newimg/BREN IMPERIA/bren_imperia_block_i-harlur-bengaluru-bren_corporation.avif" alt="Residential project image" />
   </div>
 </section>
 
-<style>.hero-section {
+<style>
+.hero-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -244,7 +317,7 @@ body {
 }
 
 .hero-content h4 span {
-  color: #3668a3; /* accent color */
+  color: #3668a3;
   font-weight: 600;
 }
 
@@ -268,8 +341,61 @@ body {
 
 .hero-image img {
   width: 100%;
+  height: auto;
   border-radius: 4px;
   object-fit: cover;
+}
+
+
+/* ---------------------------
+   📱 Mobile Responsive Styles
+---------------------------- */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 6%;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h3 {
+    font-size: 26px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    max-height: 320px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 30px 5%;
+  }
+
+  .hero-content h3 {
+    font-size: 22px;
+  }
+
+  .hero-content h4 {
+    font-size: 16px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-image img {
+    max-height: 260px;
+  }
 }
 </style>
 
