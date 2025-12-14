@@ -98,8 +98,8 @@
     </ul>
   </div>
   <!-- end menu -->
-   
-  <div class="side-content">
+
+ <div class="side-content">
     <figure> <img src="images/realpropservice.png" alt="Image"> </figure>
     <p>Through every completed project, Realprop elevates lifestyles and remains a hallmark of luxury living.</p>
     <!-- <ul class="gallery">
@@ -111,7 +111,7 @@
     Kyiv | G. Stalingrada Avenue, 6 
     Vilnius | Antakalnio St. 17
     </address> -->
-    <h6 sty>+91  63648 90199</h6>
+    <h6>+91  63648 90199</h6>
     <p><a href="#">customer@realpropservice.com</a></p>
     <ul class="social-media">
       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -125,6 +125,7 @@
 </div>
 
 
+
 <!-- end side-navigation -->
 
 
@@ -134,7 +135,7 @@
       
       <div class="logo"> <a href="index.html"><img src="images/realpropservice.png" alt="Image"></a> </div>
       <!-- end logo -->
-      <div class="phone-email"> 
+ <div class="phone-email"> 
         <!-- <img src="images/icon-phone.png" alt="Image"> -->
         <h4 style="color: #3668a3;">+91  63648 90199</h4>
         <small>
@@ -193,6 +194,8 @@
             <li><a href="apartment-three-rooms.html">3 Rooms 90m²</a></li>
           </ul>
         </li> -->
+
+        
 <li class="dropdown">
   <a href="#">SERVICES</a>
   <ul class="dropdown-menu">
@@ -272,35 +275,11 @@ body {
 
      <!-- Slide 1 -->
 <div class="swiper-slide">
-  <img src="newimg/Image 1.avif" alt="Dream Home" class="slide-bg">
+  <img src="newimg/background.png" alt="Dream Home" class="slide-bg">
   <div class="container">
-
-
-
-
-    <h2><span>REAL PROP </span> SERVICE</h2>
-    <h1>Find Your Dream Home<br>With Real Prop Service!</h1>
-    <br>
-    <h3>Authorized Channel Partner for Bangalore’s Top Builders</h3>
-
-    <!-- <figure><img src="images/services-icon01.png" alt="Service Icon"></figure> -->
-  </div>
-</div>
-
-
-
-    <!-- Slide 2 -->
-<div class="swiper-slide">
-  <img src="newimg/ChatGPT Image Dec 13, 2025, 10_29_18 PM (1).png" alt="Dream Home" class="slide-bg">
-  <div class="container">
-
-
-
-
-    <h2><span>REAL PROP </span> SERVICE</h2>
-    <h1>Find Your Dream Home<br>With Real Prop Service!</h1>
-    <br>
-    <h3>Authorized Channel Partner for Bangalore’s Top Builders</h3>
+    <h1><span>Our</span> Projects</h1>
+    <h2>A Portfolio Built on Trust and Excellence</h2>
+    <a href="contact.html">GET A CALL BACK IN 5 MINUTES <i class="fas fa-caret-right"></i></a>
 
     <!-- <figure><img src="images/services-icon01.png" alt="Service Icon"></figure> -->
   </div>
@@ -331,7 +310,33 @@ body {
   color: #fff;
   padding-top: 20vh; /* adjust vertical positioning */
 }
+/* Disable Swiper slider behavior */
+.slider,
+.slider-container,
+.swiper-wrapper {
+  display: block !important;
+}
 
+/* Force only the first slide to show */
+.swiper-slide {
+  display: none !important;
+  position: relative;
+}
+
+.swiper-slide:first-child {
+  display: block !important;
+}
+
+/* Remove transform/animation effects */
+.swiper-wrapper {
+  transform: none !important;
+  transition: none !important;
+}
+
+/* Ensure full height */
+.swiper-slide {
+  height: 100vh !important;
+}
 </style>
 
   </div>
@@ -339,272 +344,13 @@ body {
 
 <!-- end slider -->
 
-<section class="hero-section">
-  <div class="hero-content">
-    <h4><span>Real Prop Service</span> Trusted Property Advisors</h4>
 
-    <h3>Your Partner in Finding the Perfect Home in Bangalore</h3>
-
-    <p>
-      Real Prop Service brings you a curated selection of premium, verified
-      residential projects from Bangalore’s most reputed builders.
-      Whether you're buying for personal living or investment, our experts
-      guide you through every step — from project shortlisting
-      and site visits to legal advice, loan support, negotiation,
-      and final handover.
-    </p>
-  </div>
-
-  <div class="hero-image">
-    <img src="newimg/ChatGPT Image Dec 13, 2025, 10_29_18 PM (1).png" alt="Residential project image" />
-  </div>
-</section>
-
-<style>
-.hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 8%;
-  background: #ffffff;
-  gap: 40px;
-}
-
-.hero-content {
-  flex: 1;
-  max-width: 520px;
-}
-
-.hero-content h4 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 12px;
-  color: #000;
-}
-
-.hero-content h4 span {
-  color: #3668a3;
-  font-weight: 600;
-}
-
-.hero-content h3 {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 18px;
-  color: #000;
-  line-height: 1.3;
-}
-
-.hero-content p {
-  line-height: 1.7;
-  font-size: 17px;
-  color: #4a4a4a;
-}
-
-.hero-image {
-  flex: 1;
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  object-fit: cover;
-}
-
-
-/* ---------------------------
-   📱 Mobile Responsive Styles
----------------------------- */
-@media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-    padding: 40px 6%;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .hero-content {
-    max-width: 100%;
-  }
-
-  .hero-content h3 {
-    font-size: 26px;
-  }
-
-  .hero-content p {
-    font-size: 16px;
-  }
-
-  .hero-image img {
-    max-height: 320px;
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-section {
-    padding: 30px 5%;
-  }
-
-  .hero-content h3 {
-    font-size: 22px;
-  }
-
-  .hero-content h4 {
-    font-size: 16px;
-  }
-
-  .hero-content p {
-    font-size: 15px;
-  }
-
-  .hero-image img {
-    max-height: 260px;
-  }
-}
-</style>
-
-
-
-<!-- <section class="logos">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0s">
-        <figure> <img src="images/logo01.jpg" alt="Image">
-          <h6>TABLE</h6>
-        </figure>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.05s">
-        <figure> <img src="images/logo02.jpg" alt="Image">
-          <h6>PLANE</h6>
-        </figure>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.10s">
-        <figure> <img src="images/logo03.jpg" alt="Image">
-          <h6>CONNECT</h6>
-        </figure>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.15s">
-        <figure> <img src="images/logo04.jpg" alt="Image">
-          <h6>GLASSES</h6>
-        </figure>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.20s">
-        <figure> <img src="images/logo05.jpg" alt="Image">
-          <h6>PIXEL</h6>
-        </figure>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.25s">
-        <figure> <img src="images/logo06.jpg" alt="Image">
-          <h6>ATTACH</h6>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- end logos -->
-
-
-<section class="benefits">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-12 wow fadeInUp">
-        <!-- <b>02</b> -->
-        <h4><span style="color: #3668a3;">Why Choose</span> Real Prop Service</h4>
-        <h3>Your Trusted Partner in Premium Properties</h3>
-      </div>
-
-      <div class="col wow fadeInUp" data-wow-delay="0s">
-        <figure><img src="images/icon-benefits01.png" alt="Builders"><b></b></figure>
-        <h6>Trusted Channel Partner</h6>
-        <p>50+ Builders – Access exclusive pre-launch offers & deals.</p>
-      </div>
-
-      <div class="col wow fadeInUp" data-wow-delay="0.05s">
-        <figure><img src="images/icon-benefits02.png" alt="Support"><b></b></figure>
-        <h6>End-to-End Support</h6>
-        <p>From inquiry to key handover, including legal & loan guidance.</p>
-      </div>
-
-      <div class="col wow fadeInUp" data-wow-delay="0.10s">
-        <figure><img src="images/icon-benefits03.png" alt="Verified"><b></b></figure>
-        <h6>Verified Listings Only</h6>
-        <p>100% authentic, builder-approved projects.</p>
-      </div>
-
-      <div class="col wow fadeInUp" data-wow-delay="0.15s">
-        <figure><img src="images/icon-benefits04.png" alt="Experts"><b></b></figure>
-        <h6>Area Experts & Investment Advisors</h6>
-        <p>Insights on ROI, rental trends & growth corridors.</p>
-      </div>
-
-      <div class="col wow fadeInUp" data-wow-delay="0.20s">
-        <figure><img src="images/icon-benefits05.png" alt="Site Visit"><b></b></figure>
-        <h6>Site Visit to Closure</h6>
-        <p>Guided tours, negotiations, documentation, and possession.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="recent-gallery">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <!-- LEFT SIDE CONTENT -->
-      <div class="col-lg-5 wow fadeInUp">
-        <!-- <b>03</b> -->
-        <h4><span style="color: #3668a3;">Featured</span> Project Gallery</h4>
-        <h3>Explore Premium Homes Across Bangalore</h3>
-        <a href="projects.html" class="link">VIEW COMPLETE GALLERY <i class="fas fa-caret-right"></i></a>
-      </div>
-
-      <!-- RIGHT SIDE IMAGES -->
-      <div class="col-lg-7">
-        <div class="row inner">
-
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0s">
-            <figure data-stellar-ratio="1.07">
-              <a href="newimg/ChatGPT Image Dec 13, 2025, 10_29_18 PM (1).png" data-fancybox>
-                <img src="newimg/ChatGPT Image Dec 13, 2025, 10_29_18 PM (1).png" style="height: 200px;" alt="Luxury Apartments Bangalore">
-              </a>
-            </figure>
-          </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.05s">
-            <figure data-stellar-ratio="1.15">
-              <a href="newimg/ChatGPT Image Dec 12, 2025, 11_22_38 PM (1).png" data-fancybox>
-                <img src="newimg/ChatGPT Image Dec 12, 2025, 11_22_38 PM (1).png" style="height: 200px;" alt="Premium Residences Bangalore">
-              </a>
-            </figure>
-          </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.10s">
-            <figure data-stellar-ratio="1.04">
-              <a href="newimg/ChatGPT Image Dec 13, 2025, 10_08_00 PM (1).png" style="height: 100px;" data-fancybox>
-                <img src="newimg/ChatGPT Image Dec 13, 2025, 10_08_00 PM (1).png" style="height: 200px;" alt="Modern Homes Bangalore">
-              </a>
-            </figure>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
+<br>
+<br>
+<br>
 <section class="properties">
-  <h4><span>Featured</span> Project Slider</h4>
-  <h3>Explore Our Projects Across Bangalore</h3>
+  <h4><span>Featured</span> Project Gallery</h4>
+  <h3>Explore Premium Homes Across Bangalore</h3>
 
   <div class="property-grid">
     <!-- Card 1 -->
@@ -679,7 +425,8 @@ body {
       </div>
     </div>
 
-    <!-- <div class="property-card">
+    <!-- Card 4 -->
+    <div class="property-card">
       <div class="property-image">
         <img src="newimg/ChatGPT Image Dec 13, 2025, 10_08_00 PM (1).png" alt="Godrej Palm Retreat" />
         <span class="badge">Buy</span>
@@ -702,6 +449,7 @@ body {
       </div>
     </div>
 
+    <!-- Card 5 -->
     <div class="property-card">
       <div class="property-image">
         <img src="newimg/ChatGPT Image Dec 13, 2025, 10_10_26 PM (1).png" alt="Puravankara Casa Grande" />
@@ -725,6 +473,7 @@ body {
       </div>
     </div>
 
+    <!-- Card 6 -->
     <div class="property-card">
       <div class="property-image">
         <img src="newimg/ChatGPT Image Dec 12, 2025, 11_22_38 PM (1).png" alt="Pride Sunrise Villas" />
@@ -746,7 +495,7 @@ body {
           <button class="btn-visit">Schedule Visit</button>
         </div>
       </div>
-    </div> -->
+    </div>
 
   </div>
 </section>
@@ -839,237 +588,7 @@ form.addEventListener('submit', (e) => {
 });
 </script>
 
-
-
-
-
-<!-- 
-<section class="property-wrapper" style="display:flex; gap:25px; margin:25px auto; width:90%;">
-
-    <div class="properties" style="flex:3;">
-      
-        <h4><span>Featured</span> Project Gallery</h4>
-        <h3>Explore Premium Homes Across Bangalore</h3>
-        
-        <h2 style="font-size:28px; font-weight:600;">Properties (58)</h2>
-
-        <div style="margin:15px 0;">
-            <button style="padding:6px 16px; border:none; background:#000; color:#fff; border-radius:5px; cursor:pointer;">All</button>
-            <button style="padding:6px 16px; border:1px solid #3668a3; background:#fff; color:#3668a3; border-radius:5px; cursor:pointer; margin-left:10px;">For Rent</button>
-            <button style="padding:6px 16px; border:1px solid #3668a3; background:#fff; color:#3668a3; border-radius:5px; cursor:pointer; margin-left:10px;">For Sale</button>
-        </div>
-
-        <div class="property-card" style="display:flex; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.1); margin-top:20px;">
-            
-            <div style="position:relative;">
-                <img src="images/blog01.jpg" 
-                     style="width:280px; height:100%; object-fit:cover;">
-                <span style="position:absolute; top:10px; left:10px; background:#3668a3; color:#fff; padding:5px 12px; border-radius:5px; font-size:14px;">Buy</span>
-            </div>
-
-            <div style="padding:20px; flex:1;">
-                <div style="color:#777; font-size:14px; display:flex; align-items:center; gap:8px;">
-                    <span>📍 KR Puram, Bangalore, Karnataka - 560049</span>
-                </div>
-
-                <h3 style="color:#3668a3; margin:10px 0; cursor:pointer;">Pride Euphoria</h3>
-
-                <p style="color:#444; font-size:14px; line-height:1.6;">
-                    Luxury 3 BHK homes near IT hubs, schools & lifestyle hotspots.
-                    Amenities include clubhouse, gym, pool & landscaped gardens.
-                </p>
-
-                <div style="display:flex; gap:25px; margin:15px 0; color:#333;">
-                    <span>🏠 1350 sqft</span>
-                    <span>🛏 3 Beds</span>
-                    <span>🛁 2 Baths</span>
-                </div>
-
-                <p style="font-size:20px; font-weight:700; color:#b30000;">
-                    ₹1.25 – ₹1.85 Cr
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="search-box" 
-         style="flex:1.2; background:#fff; padding:25px; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.1); height:max-content;">
-
-        <h3 style="text-align:center; color:#3668a3; margin-bottom:20px;">Search Preferred Property</h3>
-
-        <input type="text" placeholder="Enter Preferred Location"
-               style="width:100%; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:12px;">
-
-        <select style="width:100%; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:12px;">
-            <option>3 BHK Flat</option>
-            <option>2 BHK Flat</option>
-            <option>4 BHK Flat</option>
-        </select>
-
-        <input type="number" placeholder="Preferred Bedrooms"
-               style="width:100%; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:12px;">
-
-        <input type="number" placeholder="Preferred Bathrooms"
-               style="width:100%; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:12px;">
-
-        <div style="display:flex; gap:10px;">
-            <input type="number" placeholder="Min Price"
-                   style="flex:1; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:12px;">
-            <input type="number" placeholder="Max Price"
-                   style="flex:1; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:12px;">
-        </div>
-
-        <div style="display:flex; gap:10px;">
-            <input type="number" placeholder="Min Sq. Ft"
-                   style="flex:1; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:12px;">
-            <input type="number" placeholder="Max Sq. Ft"
-                   style="flex:1; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:12px;">
-        </div>
-
-        <label style="display:flex; align-items:center; gap:8px; margin-bottom:20px;">
-            <input type="checkbox"> Gated Community
-        </label>
-
-        <button style="width:100%; padding:12px; background:#3668a3; color:#fff; border:none; border-radius:8px; font-weight:600; cursor:pointer;">
-            Search Now
-        </button>
-
-    </div>
-
-</section> -->
-
-<style>/* ---------- MOBILE RESPONSIVE FIX ---------- */
-
-/* Stack property-wrapper columns on mobile */
-@media (max-width: 768px) {
-    .property-wrapper {
-        flex-direction: column !important;
-        width: 95% !important;
-        margin: 15px auto !important;
-    }
-
-    .properties,
-    .search-box {
-        width: 100% !important;
-        flex: none !important;
-    }
-
-    /* Property card becomes vertical */
-    .property-card {
-        flex-direction: column !important;
-    }
-
-    .property-card img {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    /* Buttons wrap nicely */
-    .properties div button {
-        margin-bottom: 10px !important;
-    }
-}
-
-/* Gallery section responsiveness */
-@media (max-width: 768px) {
-    .recent-gallery .row.align-items-center {
-        text-align: center;
-    }
-
-    .recent-gallery .inner .col-md-4 {
-        width: 50% !important;
-        margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 500px) {
-    .recent-gallery .inner .col-md-4 {
-        width: 100% !important;
-    }
-}
-</style>
-
-<div style="height:100px; width:100%; background:#fff;"></div>
-
-
-
-<section class="associations">
-  <div class="container">
-    <div class="row text-center wow fadeInUp">
-      <div class="col-12">
-        <h4><span>Our</span> Trusted Associations</h4>
-        <h3>Partnered with Bangalore’s Top Builders</h3>
-      </div>
-    </div>
-
-    <div class="logo-slider">
-      <div class="logo-track">
-        <!-- Duplicate logos for seamless loop -->
-        <div class="logo-box"><img src="images/shobha.jpeg" alt=""></div>
-        <div class="logo-box"><img src="images/brigade-logo_horizontal-2048px.png" alt=""></div>
-        <div class="logo-box"><img src="images/Godrej_new_logo_1732796773986_1732796776288.avif" alt=""></div>
-        <div class="logo-box"><img src="images/pridegroup_bangalore_logo.jpeg" alt=""></div>
-        <div class="logo-box"><img src="images/purvankara.png" alt=""></div>
-        <div class="logo-box"><img src="images/Logos_June_2020_Provident.png" alt=""></div>
-
-        <!-- Duplicate again for infinite scrolling -->
-        <div class="logo-box"><img src="images/shobha.jpeg" alt=""></div>
-        <div class="logo-box"><img src="images/brigade-logo_horizontal-2048px.png" alt=""></div>
-        <div class="logo-box"><img src="images/Godrej_new_logo_1732796773986_1732796776288.avif" alt=""></div>
-        <div class="logo-box"><img src="images/pridegroup_bangalore_logo.jpeg" alt=""></div>
-        <div class="logo-box"><img src="images/purvankara.png" alt=""></div>
-        <div class="logo-box"><img src="images/Logos_June_2020_Provident.png" alt=""></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<style>/* Wrapper hides overflow */
-.logo-slider {
-  overflow: hidden;
-  width: 100%;
-  padding: 20px 0;
-}
-
-/* The moving track */
-.logo-track {
-  display: flex;
-  width: calc(250px * 12); /* box width * number of boxes */
-  animation: scrollLeft 25s linear infinite;
-}
-
-/* Individual logo box */
-.logo-box {
-  flex: 0 0 250px;        /* width of each box */
-  background: #f4f4f4;
-  padding: 20px;
-  margin: 0 15px;
-  border-radius: 10px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* Logo styling */
-.logo-box img {
-  max-width: 100%;
-  max-height: 70px;
-  object-fit: contain;
-}
-
-/* Keyframes to scroll left */
-@keyframes scrollLeft {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-</style>
-
-
-<div style="height:100px; width:100%; background:#fff;"></div>
+<div style="height: 50px;color: #fff;"></div>
 
 
 <!-- <section class="footer-bar">
@@ -1101,153 +620,6 @@ form.addEventListener('submit', (e) => {
 
 <!-- end footer-bar -->
 
-<section style="
-  width: 100%;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  color: #4a3f35;
-  background: url('images/house-with-sign-that-says-word-side (1).jpg') center/cover no-repeat;
-  padding: 4rem 1rem;
-  box-sizing: border-box;
-">
-
-  <!-- Content Container -->
-  <div style="
-    position: relative;
-    max-width: 480px;
-    margin: 0 auto;
-    z-index: 1;
-    background: #fff;
-    border-radius: 12px;
-    padding: 2rem 2.5rem;
-    box-shadow: 0 6px 15px rgb(0 0 0 / 0.15);
-  ">
-    <!-- Lead Message -->
-    <div style="
-      background: #3668a3;
-      padding: 1rem 1.5rem;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 1.1rem;
-      text-align: center;
-      box-shadow: 0 4px 10px #3668a3;
-      margin-bottom: 2rem;
-      color: #fff;
-    ">
-      Want the best deal? Drop your number – we’ll call in 5 minutes!<br>
-      <small style="font-weight: 400; font-size: 0.85rem; color: #fff;">
-        Get access to early-bird prices, exclusive deals, and project updates.
-      </small>
-    </div>
-
-    <!-- Form -->
-    <form>
-      <h3 style="font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: #fff;">Schedule an Appointment</h3>
-
-      <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
-        <input type="text" name="first_name" placeholder="First Name" required
-          style="
-            flex: 1;
-            padding: 0.75rem 1rem;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background: #fff;
-            font-size: 1rem;
-            color: #4a3f35;
-            transition: box-shadow 0.3s ease;
-          "
-          onfocus="this.style.boxShadow='0 0 6px #f0ad4e'; this.style.borderColor='#f0ad4e';" onblur="this.style.boxShadow='none'; this.style.borderColor='#ddd';" />
-        <input type="text" name="last_name" placeholder="Last Name" required
-          style="
-            flex: 1;
-            padding: 0.75rem 1rem;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background: #fff;
-            font-size: 1rem;
-            color: #4a3f35;
-            transition: box-shadow 0.3s ease;
-          "
-          onfocus="this.style.boxShadow='0 0 6px #f0ad4e'; this.style.borderColor='#f0ad4e';" onblur="this.style.boxShadow='none'; this.style.borderColor='#ddd';" />
-      </div>
-
-      <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
-        <input type="email" name="email" placeholder="Email" required
-          style="
-            flex: 1;
-            padding: 0.75rem 1rem;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background: #fff;
-            font-size: 1rem;
-            color: #4a3f35;
-            transition: box-shadow 0.3s ease;
-          "
-          onfocus="this.style.boxShadow='0 0 6px #f0ad4e'; this.style.borderColor='#f0ad4e';" onblur="this.style.boxShadow='none'; this.style.borderColor='#ddd';" />
-        <input type="tel" name="phone" placeholder="Phone" required
-          style="
-            flex: 1;
-            padding: 0.75rem 1rem;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background: #fff;
-            font-size: 1rem;
-            color: #4a3f35;
-            transition: box-shadow 0.3s ease;
-          "
-          onfocus="this.style.boxShadow='0 0 6px #f0ad4e'; this.style.borderColor='#f0ad4e';" onblur="this.style.boxShadow='none'; this.style.borderColor='#ddd';" />
-      </div>
-
-      <input type="text" name="subject" placeholder="Subject"
-        style="
-          width: 100%;
-          padding: 0.75rem 1rem;
-          margin-bottom: 1rem;
-          border: 1px solid #ddd;
-          border-radius: 10px;
-          background: #fff;
-          font-size: 1rem;
-          color: #4a3f35;
-          transition: box-shadow 0.3s ease;
-        "
-        onfocus="this.style.boxShadow='0 0 6px #f0ad4e'; this.style.borderColor='#f0ad4e';" onblur="this.style.boxShadow='none'; this.style.borderColor='#ddd';" />
-
-      <textarea name="message" placeholder="Message" rows="5"
-        style="
-          width: 100%;
-          padding: 0.75rem 1rem;
-          border: 1px solid #ddd;
-          border-radius: 10px;
-          background: #fff;
-          font-size: 1rem;
-          color: #4a3f35;
-          resize: vertical;
-          transition: box-shadow 0.3s ease;
-        "
-        onfocus="this.style.boxShadow='0 0 6px #f0ad4e'; this.style.borderColor='#f0ad4e';" onblur="this.style.boxShadow='none'; this.style.borderColor='#ddd';"></textarea>
-
-      <button type="submit"
-        style="
-          margin-top: 1.5rem;
-          width: 100%;
-          padding: 0.85rem 0;
-          background: #3668a3;
-          border: none;
-          border-radius: 12px;
-          font-weight: 700;
-          color: #fff;
-          font-size: 1.1rem;
-          cursor: pointer;
-          transition: background 0.3s ease;
-        "
-        onmouseover="this.style.background='#3668a3';" onmouseout="this.style.background='#3668a3';">
-        Send Now &rarr;
-      </button>
-    </form>
-  </div>
-</section>
 
 
 
@@ -1291,8 +663,8 @@ form.addEventListener('submit', (e) => {
       <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.20s">
         <div class="contact-box">
           <h5>CALL CENTER</h5>
-          <h3>+91 63648 90199</h3>
-          <p><a href="#">contact@realpropservice.com</a></p>
+          <h3>+91  63648 90199</h3>
+          <p><a href="#">customer@realpropservice.com</a></p>
           <ul>
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
