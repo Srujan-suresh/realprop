@@ -90,9 +90,15 @@
         </ul>
       </li> -->
       <!-- <li><a href="news.html">NEWS</a></li> -->
-      <li><a href="projects.html">PROJECTS</a></li>
       <li><a href="facilities.html">SERVICES</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+<li><a href="blog.html">BLOG</a></li>
 
+      <li><a href="career.html">CAREER</a></li>
+      <li><a href="#testimonial-section">TESTIMONIAL</a></li>
+<style>html {
+  scroll-behavior: smooth;
+}</style>
       <li><a href="contact.html">CONTACT</a></li>
     </ul>
   </div>
@@ -112,7 +118,7 @@
     Vilnius | Antakalnio St. 17
     </address> -->
     <h6>+91  63648 90199</h6>
-    <p><a href="#">customer@realpropservice.com</a></p>
+    <p><a href="#">customerservice@realpropservice.com</a></p>
     <ul class="social-media">
       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -139,7 +145,7 @@
         <!-- <img src="images/icon-phone.png" alt="Image"> -->
         <h4 style="color: #3668a3;">+91  63648 90199</h4>
         <small>
-  <a href="#" style="color: #3668a3;">customer@realpropservice.com</a>
+  <a href="#" style="color: #3668a3;">customerservice@realpropservice.com</a>
 </small>
  </div>
       <!-- end phone -->
@@ -162,7 +168,6 @@
         <li><a href="about.html">ABOUT</a></li>
 
 
-        <li><a href="projects.html">PROJECTS</a></li>
 
       
 
@@ -244,7 +249,10 @@
   display: block;
 }
 </style>
+        <li><a href="projects.html">PROJECTS</a></li>
+<li><a href="blog.html">BLOG</a></li>
 
+      <li><a href="career.html">CAREER</a></li>
         <!-- <li><a href="news.html">NEWS</a></li> -->
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
@@ -361,7 +369,7 @@ body {
 </div>
 
   <div class="hero-image">
-    <img src="newimg/ChatGPT Image Dec 12, 2025, 11_41_24 PM (1).png" style="height: 460px;" alt="Residential project image" />
+    <img src="newimg/ChatGPT Image Dec 12, 2025, 11_37_26 PM (1).png" style="height: 460px;" alt="Residential project image" />
   </div>
 </section>
 
@@ -415,9 +423,190 @@ body {
   width: 100%;
   border-radius: 4px;
   object-fit: cover;
-}</style>
+}
+/* ---------------------------
+   📱 Mobile Responsive Styles
+---------------------------- */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 6%;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h3 {
+    font-size: 26px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    max-height: 320px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 30px 5%;
+  }
+
+  .hero-content h3 {
+    font-size: 22px;
+  }
+
+  .hero-content h4 {
+    font-size: 16px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-image img {
+    max-height: 260px;
+  }
+}
+</style>
 
 
+
+<!-- Popup Contact Form -->
+<div id="contact-popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex; /* Make it flex to center the content */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup-content {
+  background-color: #ffffff;
+  padding: 20px 25px; /* Reduced top/bottom padding */
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 500px; /* Limit height */
+  overflow-y: auto; /* Scroll if content exceeds max-height */
+  box-shadow: 0 8px 20px rgba(54, 106, 168, 0.4);
+  position: relative;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #366aa8;
+}
+
+.popup-content h2 {
+  color: #366aa8;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.popup-content label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #366aa8;
+  font-weight: 500;
+}
+
+.popup-content input,
+.popup-content textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup-content button {
+  background-color: #366aa8;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: #2d5d8e;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const popup = document.getElementById('contact-popup');
+  const closeBtn = document.querySelector('.close-btn');
+
+  // Show popup immediately
+  popup.style.display = 'flex';
+
+  // Close popup on close button
+  closeBtn.addEventListener('click', function() {
+    popup.style.display = 'none';
+  });
+
+  // Close popup when clicking outside the content
+  window.addEventListener('click', function(e) {
+    if (e.target == popup) {
+      popup.style.display = 'none';
+    }
+  });
+
+  // Handle form submission
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Thank you for contacting us! We will get back to you shortly.');
+    popup.style.display = 'none';
+    this.reset();
+  });
+});
+</script>
 
 <section class="legal-financial-services">
   <div class="container">
@@ -652,8 +841,12 @@ body {
         <ul class="footer-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
+                    <li><a href="facilities.html">Services</a></li>
+
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="facilities.html">Services</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+
+      <li><a href="career.html">CAREER</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -672,7 +865,7 @@ body {
         <div class="contact-box">
           <h5>CALL CENTER</h5>
           <h3>+91  63648 90199</h3>
-          <p><a href="#">customer@realpropservice.com</a></p>
+          <p><a href="#">customerservice@realpropservice.com</a></p>
           <ul>
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>

@@ -93,9 +93,16 @@
         </ul>
       </li> -->
       <!-- <li><a href="news.html">NEWS</a></li> -->
-      <li><a href="projects.html">PROJECTS</a></li>
-      <li><a href="facilities.html">SERVICES</a></li>
+             <li><a href="facilities.html">SERVICES</a></li>
 
+      <li><a href="projects.html">PROJECTS</a></li>
+<li><a href="blog.html">BLOG</a></li>
+
+      <li><a href="career.html">CAREER</a></li>
+      <li><a href="#testimonial-section">TESTIMONIAL</a></li>
+<style>html {
+  scroll-behavior: smooth;
+}</style>
       <li><a href="contact.html">CONTACT</a></li>
     </ul>
   </div>
@@ -114,7 +121,7 @@
     Vilnius | Antakalnio St. 17
     </address> -->
     <h6>+91  63648 90199</h6>
-    <p><a href="#">customer@realpropservice.com</a></p>
+    <p><a href="#">customerservice@realpropservice.com</a></p>
     <ul class="social-media">
       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -141,7 +148,7 @@
         <!-- <img src="images/icon-phone.png" alt="Image"> -->
         <h4 style="color: #3668a3;">+91  63648 90199</h4>
         <small>
-  <a href="#" style="color: #3668a3;">customer@realpropservice.com</a>
+  <a href="#" style="color: #3668a3;">customerservice@realpropservice.com</a>
 </small>
  </div>
       <!-- end phone -->
@@ -164,7 +171,6 @@
         <li><a href="about.html">ABOUT</a></li>
 
 
-        <li><a href="projects.html">PROJECTS</a></li>
 
       
 
@@ -249,7 +255,10 @@
 }
 </style>
 
+        <li><a href="projects.html">PROJECTS</a></li>
+<li><a href="blog.html">BLOG</a></li>
 
+      <li><a href="career.html">CAREER</a></li>
 <!-- <li><a href="news.html">NEWS</a></li> -->
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
@@ -347,6 +356,137 @@ body {
 <!-- end slider -->
 
 
+<!-- Popup Contact Form -->
+<div id="contact-popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex; /* Make it flex to center the content */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup-content {
+  background-color: #ffffff;
+  padding: 20px 25px; /* Reduced top/bottom padding */
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 500px; /* Limit height */
+  overflow-y: auto; /* Scroll if content exceeds max-height */
+  box-shadow: 0 8px 20px rgba(54, 106, 168, 0.4);
+  position: relative;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #366aa8;
+}
+
+.popup-content h2 {
+  color: #366aa8;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.popup-content label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #366aa8;
+  font-weight: 500;
+}
+
+.popup-content input,
+.popup-content textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup-content button {
+  background-color: #366aa8;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: #2d5d8e;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const popup = document.getElementById('contact-popup');
+  const closeBtn = document.querySelector('.close-btn');
+
+  // Show popup immediately
+  popup.style.display = 'flex';
+
+  // Close popup on close button
+  closeBtn.addEventListener('click', function() {
+    popup.style.display = 'none';
+  });
+
+  // Close popup when clicking outside the content
+  window.addEventListener('click', function(e) {
+    if (e.target == popup) {
+      popup.style.display = 'none';
+    }
+  });
+
+  // Handle form submission
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Thank you for contacting us! We will get back to you shortly.');
+    popup.style.display = 'none';
+    this.reset();
+  });
+});
+</script>
+
+
 <br>
 <br>
 <br>
@@ -356,148 +496,314 @@ body {
 
   <div class="property-grid">
     <!-- Card 1 -->
-    <div class="property-card">
-      <div class="property-image">
-        <img src="newimg/ChatGPT Image Dec 13, 2025, 10_19_07 PM (1).png" alt="Sobha Dream Acres" />
-        <span class="badge">Buy</span>
-      </div>
-      <div class="property-info">
-        <div class="location">📍 Whitefield, Bangalore, Builder: Sobha</div>
-        <h3>Sobha Dream Acres</h3>
-        <p class="description">
-          Ready-to-move 2–4 BHK apartments. Amenities: Clubhouse, Gym, Swimming Pool. Possession: 2025.
-        </p>
-        <div class="property-features">
-          <span>🛏 2–4 BHK</span>
-          <span>🏠 1100–1800 sqft</span>
-        </div>
-        <div class="property-price">₹85L – ₹2.3 Cr</div>
-        <div class="cta-buttons" style="margin-top: 10px;">
+    <!-- Card 1 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/century.webp" alt="Century Group" />
+    <span class="badge">Partner</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Century Group</div>
+    <h3>Century Group</h3>
+    <p class="description">
+      Premium Category A residential developments across prime Bangalore locations.
+    </p>
+    <div class="property-features">
+      <span>🛏 Apartments & Villas</span>
+      <span>🏠 Multiple configurations</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
           <button class="btn-download">Download Brochure</button>
           <button class="btn-visit">Schedule Visit</button>
-        </div>
-      </div>
-    </div>
+        </div>  </div>
+</div>
 
-    <!-- Card 2 -->
-    <div class="property-card">
-      <div class="property-image">
-        <img src="newimg/ChatGPT Image Dec 13, 2025, 10_29_18 PM (1).png" alt="Brigade Meadows" />
-        <span class="badge">Buy</span>
-      </div>
-      <div class="property-info">
-        <div class="location">📍 Sarjapur Road, Bangalore, Builder: Brigade</div>
-        <h3>Brigade Meadows</h3>
-        <p class="description">
-          Under-construction 3 BHK & 4 BHK apartments near IT hubs. Amenities: Pool, Gym, Park. Possession: 2026.
-        </p>
-        <div class="property-features">
-          <span>🛏 3–4 BHK</span>
-          <span>🏠 1200–1600 sqft</span>
-        </div>
-        <div class="property-price">₹95L – ₹2.7 Cr</div>
-        <div class="cta-buttons" style="margin-top: 10px;">
+<!-- Card 2 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/elvivory.avif" alt="ELV Ivory Terrace" />
+    <span class="badge">Buy</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: ELV Projects</div>
+    <h3>ELV Ivory Terrace</h3>
+    <p class="description">
+      Boutique luxury residential project with limited premium homes.
+    </p>
+    <div class="property-features">
+      <span>🛏 3–4 BHK</span>
+      <span>🏠 Spacious layouts</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
           <button class="btn-download">Download Brochure</button>
           <button class="btn-visit">Schedule Visit</button>
-        </div>
-      </div>
-    </div>
+        </div>  </div>
+</div>
 
-    <!-- Card 3 -->
-    <div class="property-card">
-      <div class="property-image">
-        <img src="newimg/Gemini_Generated_Image_gl17dvgl17dvgl17 (1).png" alt="Prestige Woodland" />
-        <span class="badge">Buy</span>
-      </div>
-      <div class="property-info">
-        <div class="location">📍 Hebbal, Bangalore, Builder: Prestige</div>
-        <h3>Prestige Woodland</h3>
-        <p class="description">
-          Luxury 3 BHK & 4 BHK apartments with modern amenities. Ready-to-move. Possession: Immediate.
-        </p>
-        <div class="property-features">
-          <span>🛏 3–4 BHK</span>
-          <span>🏠 1300–2000 sqft</span>
-        </div>
-        <div class="property-price">₹1.25 – ₹3.5 Cr</div>
-        <div class="cta-buttons" style="margin-top: 10px;">
+<!-- Card 3 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/lodhasarjapur.jpg" alt="Lodha Sarjapur" />
+    <span class="badge">Buy</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Sarjapur Road, Bangalore, Builder: Lodha Group</div>
+    <h3>Lodha Sarjapur</h3>
+    <p class="description">
+      High-end residential development in the Sarjapur growth corridor.
+    </p>
+    <div class="property-features">
+      <span>🛏 2–4 BHK</span>
+      <span>🏠 Modern floor plans</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
           <button class="btn-download">Download Brochure</button>
           <button class="btn-visit">Schedule Visit</button>
-        </div>
-      </div>
-    </div>
+        </div>  </div>
+</div>
 
-    <!-- Card 4 -->
-    <div class="property-card">
-      <div class="property-image">
-        <img src="newimg/ChatGPT Image Dec 13, 2025, 10_08_00 PM (1).png" alt="Godrej Palm Retreat" />
-        <span class="badge">Buy</span>
-      </div>
-      <div class="property-info">
-        <div class="location">📍 Yelahanka, Bangalore, Builder: Godrej</div>
-        <h3>Godrej Palm Retreat</h3>
-        <p class="description">
-          2–3 BHK apartments in serene surroundings. Amenities: Gym, Pool, Children's Play Area. Possession: 2025.
-        </p>
-        <div class="property-features">
-          <span>🛏 2–3 BHK</span>
-          <span>🏠 950–1400 sqft</span>
-        </div>
-        <div class="property-price">₹70L – ₹1.8 Cr</div>
-        <div class="cta-buttons" style="margin-top: 10px;">
+<!-- Card 4 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/ajmera-marina-project-420x310.jpg" alt="Ajmera Merina" />
+    <span class="badge">Buy</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Ajmera Group</div>
+    <h3>Ajmera Merina</h3>
+    <p class="description">
+      Contemporary residential apartments with thoughtfully designed amenities.
+    </p>
+    <div class="property-features">
+      <span>🛏 2–3 BHK</span>
+      <span>🏠 Efficient layouts</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
           <button class="btn-download">Download Brochure</button>
           <button class="btn-visit">Schedule Visit</button>
-        </div>
-      </div>
-    </div>
+        </div>  </div>
+</div>
 
-    <!-- Card 5 -->
-    <div class="property-card">
-      <div class="property-image">
-        <img src="newimg/ChatGPT Image Dec 13, 2025, 10_10_26 PM (1).png" alt="Puravankara Casa Grande" />
-        <span class="badge">Buy</span>
-      </div>
-      <div class="property-info">
-        <div class="location">📍 Kanakapura Road, Bangalore, Builder: Puravankara</div>
-        <h3>Puravankara Casa Grande</h3>
-        <p class="description">
-          Premium 3 BHK & 4 BHK apartments with landscaped gardens. Ready-to-move. Possession: Immediate.
-        </p>
-        <div class="property-features">
-          <span>🛏 3–4 BHK</span>
-          <span>🏠 1200–1700 sqft</span>
-        </div>
-        <div class="property-price">₹90L – ₹2.5 Cr</div>
-        <div class="cta-buttons" style="margin-top: 10px;">
+<!-- Card 5 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/mahindra.webp" alt="Mahindra Lifespaces Group" />
+    <span class="badge">Partner</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Mahindra Lifespaces</div>
+    <h3>Mahindra Lifespaces Group</h3>
+    <p class="description">
+      Sustainably planned residential communities with smart urban design.
+    </p>
+    <div class="property-features">
+      <span>🛏 Apartments & Villas</span>
+      <span>🏠 Multiple configurations</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
           <button class="btn-download">Download Brochure</button>
           <button class="btn-visit">Schedule Visit</button>
-        </div>
-      </div>
-    </div>
+        </div>  </div>
+</div>
 
-    <!-- Card 6 -->
-    <div class="property-card">
-      <div class="property-image">
-        <img src="newimg/ChatGPT Image Dec 12, 2025, 11_22_38 PM (1).png" alt="Pride Sunrise Villas" />
-        <span class="badge">Buy</span>
-      </div>
-      <div class="property-info">
-        <div class="location">📍 Devanahalli, Bangalore, Builder: Pride</div>
-        <h3>Pride Sunrise Villas</h3>
-        <p class="description">
-          Luxury villas with 3–4 BHK options. Amenities: Private pool, Garden, Clubhouse. Possession: 2026.
-        </p>
-        <div class="property-features">
-          <span>🛏 3–4 BHK</span>
-          <span>🏠 1800–2500 sqft</span>
-        </div>
-        <div class="property-price">₹2.5 – ₹5 Cr</div>
-        <div class="cta-buttons" style="margin-top: 10px;">
+<!-- Card 6 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/nambiar.webp" alt="Nambiar Builders" />
+    <span class="badge">Partner</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Nambiar Builders</div>
+    <h3>Nambiar Builders</h3>
+    <p class="description">
+      Premium villas and plotted developments in prime Bangalore locations.
+    </p>
+    <div class="property-features">
+      <span>🛏 Villas</span>
+      <span>🏠 Large layouts</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
           <button class="btn-download">Download Brochure</button>
           <button class="btn-visit">Schedule Visit</button>
-        </div>
-      </div>
+        </div>  </div>
+</div>
+
+<!-- Card 7 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/medathe.jpg" alt="Meda Water Edge" />
+    <span class="badge">Buy</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Meda Group</div>
+    <h3>Meda Water Edge</h3>
+    <p class="description">
+      Premium waterfront residential project offering serene living.
+    </p>
+    <div class="property-features">
+      <span>🛏 2–3 BHK</span>
+      <span>🏠 Premium layouts</span>
     </div>
+<div class="cta-buttons" style="margin-top: 10px;">
+          <button class="btn-download">Download Brochure</button>
+          <button class="btn-visit">Schedule Visit</button>
+        </div>  </div>
+</div>
+
+<!-- Card 8 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/Abhee Aaria.jpg" alt="Abhee Ventures" />
+    <span class="badge">Partner</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Abhee Ventures</div>
+    <h3>Abhee Ventures</h3>
+    <p class="description">
+      Quality residential projects with a focus on timely delivery.
+    </p>
+    <div class="property-features">
+      <span>🛏 Apartments</span>
+      <span>🏠 Practical layouts</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
+          <button class="btn-download">Download Brochure</button>
+          <button class="btn-visit">Schedule Visit</button>
+        </div>  </div>
+</div>
+
+<!-- Card 9 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/purvankara.webp" alt="Puravankara Group" />
+    <span class="badge">Partner</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Puravankara Group</div>
+    <h3>Puravankara Group</h3>
+    <p class="description">
+      Premium and luxury residential developments across Bangalore.
+    </p>
+    <div class="property-features">
+      <span>🛏 2–4 BHK</span>
+      <span>🏠 Luxury layouts</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
+          <button class="btn-download">Download Brochure</button>
+          <button class="btn-visit">Schedule Visit</button>
+        </div>  </div>
+</div>
+
+<!-- Card 10 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/provident-housing-limited.webp" alt="Provident Group" />
+    <span class="badge">Partner</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Provident Group</div>
+    <h3>Provident Group</h3>
+    <p class="description">
+      Value-driven residential projects in emerging locations.
+    </p>
+    <div class="property-features">
+      <span>🛏 2–3 BHK</span>
+      <span>🏠 Compact layouts</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
+          <button class="btn-download">Download Brochure</button>
+          <button class="btn-visit">Schedule Visit</button>
+        </div>  </div>
+</div>
+
+<!-- Card 11 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/commercial.webp" alt="Brigade Group" />
+    <span class="badge">Partner</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Brigade Group</div>
+    <h3>Brigade Group</h3>
+    <p class="description">
+      Landmark residential and mixed-use developments across the city.
+    </p>
+    <div class="property-features">
+      <span>🛏 2–4 BHK</span>
+      <span>🏠 Integrated communities</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
+          <button class="btn-download">Download Brochure</button>
+          <button class="btn-visit">Schedule Visit</button>
+        </div>  </div>
+</div>
+
+<!-- Card 12 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/prestige.webp" alt="Prestige Group" />
+    <span class="badge">Partner</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Prestige Group</div>
+    <h3>Prestige Group</h3>
+    <p class="description">
+      Award-winning luxury residential developments.
+    </p>
+    <div class="property-features">
+      <span>🛏 2–5 BHK</span>
+      <span>🏠 Premium layouts</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
+          <button class="btn-download">Download Brochure</button>
+          <button class="btn-visit">Schedule Visit</button>
+        </div>  </div>
+</div>
+
+<!-- Card 13 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/environment.jpg" alt="Total Environment" />
+    <span class="badge">Partner</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Total Environment</div>
+    <h3>Total Environment</h3>
+    <p class="description">
+      Design-led homes focusing on sustainability and architecture.
+    </p>
+    <div class="property-features">
+      <span>🛏 3–4 BHK</span>
+      <span>🏠 Custom-designed homes</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
+          <button class="btn-download">Download Brochure</button>
+          <button class="btn-visit">Schedule Visit</button>
+        </div>  </div>
+</div>
+
+<!-- Card 14 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/bhartiya.webp" alt="Bharatiya City Nikoo Homes" />
+    <span class="badge">Buy</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 North Bangalore, Builder: Bharatiya City</div>
+    <h3>Bharatiya City (NIKOO Homes)</h3>
+    <p class="description">
+      Integrated township offering homes, retail, and lifestyle spaces.
+    </p>
+    <div class="property-features">
+      <span>🛏 1–4 BHK</span>
+      <span>🏠 Township living</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
+          <button class="btn-download">Download Brochure</button>
+          <button class="btn-visit">Schedule Visit</button>
+        </div>  </div>
+</div>
+
 
   </div>
 </section>
@@ -646,8 +952,12 @@ form.addEventListener('submit', (e) => {
         <ul class="footer-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
+                    <li><a href="facilities.html">Services</a></li>
+
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="facilities.html">Services</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+
+      <li><a href="career.html">CAREER</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -666,7 +976,7 @@ form.addEventListener('submit', (e) => {
         <div class="contact-box">
           <h5>CALL CENTER</h5>
           <h3>+91  63648 90199</h3>
-          <p><a href="#">customer@realpropservice.com</a></p>
+          <p><a href="#">customerservice@realpropservice.com</a></p>
           <ul>
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>

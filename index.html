@@ -71,6 +71,7 @@
         </ul>
       </li> -->
 
+
       <li><a href="about.html">ABOUT</a></li>
 <!-- 
       <li><a href="#">PAGES</a>
@@ -93,8 +94,18 @@
         </ul>
       </li> -->
       <!-- <li><a href="news.html">NEWS</a></li> -->
-      <li><a href="projects.html">PROJECTS</a></li>
       <li><a href="facilities.html">SERVICES</a></li>
+
+      <li><a href="projects.html">PROJECTS</a></li>
+
+      <li><a href="blog.html">BLOG</a></li>
+
+      <li><a href="career.html">CAREER</a></li>
+
+<li><a href="#testimonial-section">TESTIMONIAL</a></li>
+<style>html {
+  scroll-behavior: smooth;
+}</style>
 
       <li><a href="contact.html">CONTACT</a></li>
     </ul>
@@ -114,7 +125,7 @@
     Vilnius | Antakalnio St. 17
     </address> -->
     <h6 sty>+91  63648 90199</h6>
-    <p><a href="#">customer@realpropservice.com</a></p>
+    <p><a href="#">customerservice@realpropservice.com</a></p>
     <ul class="social-media">
       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -140,7 +151,7 @@
         <!-- <img src="images/icon-phone.png" alt="Image"> -->
         <h4 style="color: #3668a3;">+91  63648 90199</h4>
         <small>
-  <a href="#" style="color: #3668a3;">customer@realpropservice.com</a>
+  <a href="#" style="color: #3668a3;">customerservice@realpropservice.com</a>
 </small>
  </div>
       <!-- end phone -->
@@ -163,10 +174,8 @@
         <li><a href="about.html">ABOUT</a></li>
 
 
-        <li><a href="projects.html">PROJECTS</a></li>
 
-      
-
+    
 
 
         <!-- <li><a href="#">HOMPARK</a>
@@ -246,6 +255,11 @@
 }
 </style>
 
+        <li><a href="projects.html">PROJECTS</a></li>
+
+        <li><a href="blog.html">BLOG</a></li>
+
+      <li><a href="career.html">CAREER</a></li>
 
 <!-- <li><a href="news.html">NEWS</a></li> -->
         <li><a href="contact.html">CONTACT</a></li>
@@ -280,8 +294,8 @@ body {
 
 
 
-    <h2><span>REAL PROP </span> SERVICE</h2>
-    <h1>Find Your Dream Home<br>With Real Prop Service!</h1>
+    <!-- <h2><span>REAL PROP </span> SERVICE</h2> -->
+<h1>Discover Your Perfect Home<br>With Real Prop Service!</h1>
     <br>
     <h3>Authorized Channel Partner for Bangalore’s Top Builders</h3>
 
@@ -293,14 +307,14 @@ body {
 
     <!-- Slide 2 -->
 <div class="swiper-slide">
-  <img src="newimg/ChatGPT Image Dec 13, 2025, 10_29_18 PM (1).png" alt="Dream Home" class="slide-bg">
+  <img src="newimg/Gemini_Generated_Image_ydzxnmydzxnmydzx (1).png"  alt="Dream Home" class="slide-bg">
   <div class="container">
 
 
 
 
-    <h2><span>REAL PROP </span> SERVICE</h2>
-    <h1>Find Your Dream Home<br>With Real Prop Service!</h1>
+    <!-- <h2><span>REAL PROP </span> SERVICE</h2> -->
+<h1>Discover Your Perfect Home<br>With Real Prop Service!</h1>
     <br>
     <h3>Authorized Channel Partner for Bangalore’s Top Builders</h3>
 
@@ -343,19 +357,20 @@ body {
 
 <section class="hero-section">
   <div class="hero-content">
-    <h4><span>Real Prop Service</span> Trusted Property Advisors</h4>
+  <h4><span>Real Prop Service</span> Trusted Property Advisors</h4>
 
-    <h3>Your Partner in Finding the Perfect Home in Bangalore</h3>
+  <h3>Your Partner in Finding the Right Home in Bangalore</h3>
 
-    <p>
-      Real Prop Service brings you a curated selection of premium, verified
-      residential projects from Bangalore’s most reputed builders.
-      Whether you're buying for personal living or investment, our experts
-      guide you through every step — from project shortlisting
-      and site visits to legal advice, loan support, negotiation,
-      and final handover.
-    </p>
-  </div>
+  <p>
+    Real Prop Service brings you a curated selection of premium, verified
+    residential projects from Bangalore’s most reputed builders.
+    Whether you're buying for personal living or investment, including
+    dedicated support for NRI clients, our experts guide you through every
+    step — from project shortlisting and site visits to legal advice,
+    loan support, negotiation, and final handover.
+  </p>
+</div>
+
 
   <div class="hero-image">
     <img src="newimg/ChatGPT Image Dec 13, 2025, 10_29_18 PM (1).png" alt="Residential project image" />
@@ -469,6 +484,140 @@ body {
 
 
 
+<!-- Popup Contact Form -->
+<div id="contact-popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex; /* Make it flex to center the content */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup-content {
+  background-color: #ffffff;
+  padding: 20px 25px; /* Reduced top/bottom padding */
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 500px; /* Limit height */
+  overflow-y: auto; /* Scroll if content exceeds max-height */
+  box-shadow: 0 8px 20px rgba(54, 106, 168, 0.4);
+  position: relative;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #366aa8;
+}
+
+.popup-content h2 {
+  color: #366aa8;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.popup-content label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #366aa8;
+  font-weight: 500;
+}
+
+.popup-content input,
+.popup-content textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup-content button {
+  background-color: #366aa8;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: #2d5d8e;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const popup = document.getElementById('contact-popup');
+  const closeBtn = document.querySelector('.close-btn');
+
+  // Show popup immediately
+  popup.style.display = 'flex';
+
+  // Close popup on close button
+  closeBtn.addEventListener('click', function() {
+    popup.style.display = 'none';
+  });
+
+  // Close popup when clicking outside the content
+  window.addEventListener('click', function(e) {
+    if (e.target == popup) {
+      popup.style.display = 'none';
+    }
+  });
+
+  // Handle form submission
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Thank you for contacting us! We will get back to you shortly.');
+    popup.style.display = 'none';
+    this.reset();
+  });
+});
+</script>
+
+
+
+
+
 <!-- <section class="logos">
   <div class="container">
     <div class="row">
@@ -519,39 +668,44 @@ body {
         <h3>Your Trusted Partner in Premium Properties</h3>
       </div>
 
-      <div class="col wow fadeInUp" data-wow-delay="0s">
-        <figure><img src="images/icon-benefits01.png" alt="Builders"><b></b></figure>
-        <h6>Trusted Channel Partner</h6>
-        <p>50+ Builders – Access exclusive pre-launch offers & deals.</p>
-      </div>
+ <div class="col wow fadeInUp" data-wow-delay="0s">
+  <figure><img src="images/icon-benefits01.png" alt="Builders"><b></b></figure>
+  <h6>Trusted Channel Partner</h6>
+  <p>50+ Builders – Access exclusive pre-launch offers & deals.</p>
+</div>
 
-      <div class="col wow fadeInUp" data-wow-delay="0.05s">
-        <figure><img src="images/icon-benefits02.png" alt="Support"><b></b></figure>
-        <h6>End-to-End Support</h6>
-        <p>From inquiry to key handover, including legal & loan guidance.</p>
-      </div>
+<div class="col wow fadeInUp" data-wow-delay="0.05s">
+  <figure><img src="images/icon-benefits02.png" alt="Support"><b></b></figure>
+  <h6>End-to-End Support</h6>
+  <p>From inquiry to key handover, including legal & loan guidance.</p>
+</div>
 
-      <div class="col wow fadeInUp" data-wow-delay="0.10s">
-        <figure><img src="images/icon-benefits03.png" alt="Verified"><b></b></figure>
-        <h6>Verified Listings Only</h6>
-        <p>100% authentic, builder-approved projects.</p>
-      </div>
+<div class="col wow fadeInUp" data-wow-delay="0.10s">
+  <figure><img src="images/icon-benefits03.png" alt="Verified"><b></b></figure>
+  <h6>Verified Listings Only</h6>
+  <p>100% authentic, builder-approved projects.</p>
+</div>
 
-      <div class="col wow fadeInUp" data-wow-delay="0.15s">
-        <figure><img src="images/icon-benefits04.png" alt="Experts"><b></b></figure>
-        <h6>Area Experts & Investment Advisors</h6>
-        <p>Insights on ROI, rental trends & growth corridors.</p>
-      </div>
+<div class="col wow fadeInUp" data-wow-delay="0.15s">
+  <figure><img src="images/icon-benefits04.png" alt="Experts"><b></b></figure>
+  <h6>Area Experts & Investment Advisors</h6>
+  <p>Insights on ROI, rental trends & growth corridors, including NRI-focused investment guidance.</p>
+</div>
 
-      <div class="col wow fadeInUp" data-wow-delay="0.20s">
-        <figure><img src="images/icon-benefits05.png" alt="Site Visit"><b></b></figure>
-        <h6>Site Visit to Closure</h6>
-        <p>Guided tours, negotiations, documentation, and possession.</p>
-      </div>
+<div class="col wow fadeInUp" data-wow-delay="0.20s">
+  <figure><img src="images/icon-benefits05.png" alt="Site Visit"><b></b></figure>
+  <h6>Site Visit to Closure</h6>
+  <p>Virtual & on-site tours, negotiations, documentation, and possession support for NRI and local clients.</p>
+</div>
+
 
     </div>
   </div>
 </section>
+
+
+
+
 
 
 
@@ -612,74 +766,69 @@ body {
     <!-- Card 1 -->
     <div class="property-card">
       <div class="property-image">
-        <img src="newimg/ChatGPT Image Dec 13, 2025, 10_19_07 PM (1).png" alt="Sobha Dream Acres" />
-        <span class="badge">Buy</span>
-      </div>
-      <div class="property-info">
-        <div class="location">📍 Whitefield, Bangalore, Builder: Sobha</div>
-        <h3>Sobha Dream Acres</h3>
-        <p class="description">
-          Ready-to-move 2–4 BHK apartments. Amenities: Clubhouse, Gym, Swimming Pool. Possession: 2025.
-        </p>
-        <div class="property-features">
-          <span>🛏 2–4 BHK</span>
-          <span>🏠 1100–1800 sqft</span>
-        </div>
-        <div class="property-price">₹85L – ₹2.3 Cr</div>
-        <div class="cta-buttons" style="margin-top: 10px;">
+    <img src="newimg/century.webp" alt="Century Group" />
+    <span class="badge">Partner</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: Century Group</div>
+    <h3>Century Group</h3>
+    <p class="description">
+      Premium Category A residential developments across prime Bangalore locations.
+    </p>
+    <div class="property-features">
+      <span>🛏 Apartments & Villas</span>
+      <span>🏠 Multiple configurations</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
           <button class="btn-download">Download Brochure</button>
           <button class="btn-visit">Schedule Visit</button>
-        </div>
-      </div>
-    </div>
+        </div>  </div>
+</div>
 
-    <!-- Card 2 -->
-    <div class="property-card">
-      <div class="property-image">
-        <img src="newimg/ChatGPT Image Dec 13, 2025, 10_29_18 PM (1).png" alt="Brigade Meadows" />
-        <span class="badge">Buy</span>
-      </div>
-      <div class="property-info">
-        <div class="location">📍 Sarjapur Road, Bangalore, Builder: Brigade</div>
-        <h3>Brigade Meadows</h3>
-        <p class="description">
-          Under-construction 3 BHK & 4 BHK apartments near IT hubs. Amenities: Pool, Gym, Park. Possession: 2026.
-        </p>
-        <div class="property-features">
-          <span>🛏 3–4 BHK</span>
-          <span>🏠 1200–1600 sqft</span>
-        </div>
-        <div class="property-price">₹95L – ₹2.7 Cr</div>
-        <div class="cta-buttons" style="margin-top: 10px;">
+<!-- Card 2 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/elvivory.avif" alt="ELV Ivory Terrace" />
+    <span class="badge">Buy</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Bangalore, Builder: ELV Projects</div>
+    <h3>ELV Ivory Terrace</h3>
+    <p class="description">
+      Boutique luxury residential project with limited premium homes.
+    </p>
+    <div class="property-features">
+      <span>🛏 3–4 BHK</span>
+      <span>🏠 Spacious layouts</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
           <button class="btn-download">Download Brochure</button>
           <button class="btn-visit">Schedule Visit</button>
-        </div>
-      </div>
-    </div>
+        </div>  </div>
+</div>
 
-    <!-- Card 3 -->
-    <div class="property-card">
-      <div class="property-image">
-        <img src="newimg/Gemini_Generated_Image_gl17dvgl17dvgl17 (1).png" alt="Prestige Woodland" />
-        <span class="badge">Buy</span>
-      </div>
-      <div class="property-info">
-        <div class="location">📍 Hebbal, Bangalore, Builder: Prestige</div>
-        <h3>Prestige Woodland</h3>
-        <p class="description">
-          Luxury 3 BHK & 4 BHK apartments with modern amenities. Ready-to-move. Possession: Immediate.
-        </p>
-        <div class="property-features">
-          <span>🛏 3–4 BHK</span>
-          <span>🏠 1300–2000 sqft</span>
-        </div>
-        <div class="property-price">₹1.25 – ₹3.5 Cr</div>
-        <div class="cta-buttons" style="margin-top: 10px;">
+<!-- Card 3 -->
+<div class="property-card">
+  <div class="property-image">
+    <img src="newimg/lodhasarjapur.jpg" alt="Lodha Sarjapur" />
+    <span class="badge">Buy</span>
+  </div>
+  <div class="property-info">
+    <div class="location">📍 Sarjapur Road, Bangalore, Builder: Lodha Group</div>
+    <h3>Lodha Sarjapur</h3>
+    <p class="description">
+      High-end residential development in the Sarjapur growth corridor.
+    </p>
+    <div class="property-features">
+      <span>🛏 2–4 BHK</span>
+      <span>🏠 Modern floor plans</span>
+    </div>
+<div class="cta-buttons" style="margin-top: 10px;">
           <button class="btn-download">Download Brochure</button>
           <button class="btn-visit">Schedule Visit</button>
-        </div>
-      </div>
-    </div>
+        </div>  </div>
+</div>
+
 
     <!-- <div class="property-card">
       <div class="property-image">
@@ -994,6 +1143,91 @@ form.addEventListener('submit', (e) => {
 
 <div style="height:100px; width:100%; background:#fff;"></div>
 
+<section class="testimonial-section">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-cards">
+    <div class="testimonial-card">
+      <p style="text-align: left;">
+        "Real Prop Service made buying my dream home in Bangalore effortless and transparent. Their support from site visits to legal paperwork was outstanding."
+      </p>
+      <h4>- Priya R.</h4>
+    </div>
+    <div class="testimonial-card">
+      <p style="text-align: left;">
+        "Highly recommend Real Prop Service! Their expert guidance helped me invest smartly in their project.Their deep understanding of the market made the difference in securing a great property."
+      </p>
+      <h4>- Rajesh K.</h4>
+    </div>
+    <div class="testimonial-card">
+      <p style="text-align: left;">
+       "As an NRI, I was initially worried about navigating the property buying process from abroad. However, Real Prop Service handled everything with utmost professionalism and coordinated site visits seamlessly."
+      </p>
+      <h4>- Anjali M.</h4>
+    </div>
+  </div>
+</section>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.testimonial-section {
+  background-color: #ffffff; /* White background */
+  color: #366aa8; /* Blue headings */
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Updated font */
+}
+
+.testimonial-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #366aa8; /* Blue heading */
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: #3668a3; /* Blue cards */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(54, 106, 168, 0.4);
+  padding: 25px 30px;
+  max-width: 300px;
+  flex: 1 1 300px;
+  color: #fff; /* White text */
+  transition: background-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+  background-color: #3668a3; /* Darker blue on hover */
+}
+
+.testimonial-card p {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.testimonial-card h4 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: right;
+}
+</style>
+
+
+<div style="height: 60px;color: #fff;"></div>
+
+
+
+
 
 
 <section class="associations">
@@ -1274,8 +1508,12 @@ form.addEventListener('submit', (e) => {
         <ul class="footer-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
+                    <li><a href="facilities.html">Services</a></li>
+
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="facilities.html">Services</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+
+      <li><a href="career.html">CAREER</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -1294,7 +1532,7 @@ form.addEventListener('submit', (e) => {
         <div class="contact-box">
           <h5>CALL CENTER</h5>
           <h3>+91 63648 90199</h3>
-          <p><a href="#">customer@realpropservice.com</a></p>
+          <p><a href="#">customerservice@realpropservice.com</a></p>
           <ul>
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>

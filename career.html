@@ -283,8 +283,8 @@ body {
 <div class="swiper-slide">
   <img src="newimg/background.png" alt="Dream Home" class="slide-bg">
   <div class="container">
-    <h1><span>About</span> Us</h1>
-    <h2>Your Trusted Partner in Property Excellence</h2>
+    <h1><span>Career</h1>
+    <h2>Explore Exciting Opportunities with Real Prop Service</h2>
     <a href="contact.html">GET A CALL BACK IN 5 MINUTES <i class="fas fa-caret-right"></i></a>
 
     <!-- <figure><img src="images/services-icon01.png" alt="Service Icon"></figure> -->
@@ -350,124 +350,137 @@ body {
 
 <!-- end slider -->
 
-<section class="hero-section">
-  <div class="hero-content">
-    <h4><span>Real Prop Service</span> Trusted Property Advisors</h4>
+<section class="career-section">
+  <div class="container">
+    <h2>Careers at Real Prop Service</h2>
+    <p class="subtitle">Join Our Team and Shape the Future of Real Estate in Bangalore</p>
 
-    <h3>Your Partner in Finding the Perfect Home in Bangalore</h3>
-
-    <p>
-  Real Prop Service is a professional real estate consulting firm based in Bangalore. With 17+ years of experience and 5000+ happy clients across India and overseas, we specialize in primary property sales, resales, property management, and end-to-end NRI real estate services. Our mission is to deliver a transparent, tech-driven, and customer-first home-buying experience.
+    <p class="intro">
+      At Real Prop Service, we pride ourselves on delivering exceptional property advisory and investment guidance
+      to our clients. We are always looking for passionate professionals to join our team — whether you're experienced
+      in real estate, client relations, marketing, or operations, there’s a place for you here.
     </p>
-  </div>
 
-  <div class="hero-image">
-    <img src="newimg/Gemini_Generated_Image_gsrx0agsrx0agsrx (1).png" style="height: 460px;" alt="Residential project image" />
+    <div class="job-openings">
+      <!-- Job 1 -->
+      <div class="job-card">
+        <h3>Real Estate Consultant</h3>
+        <p>Guide clients in selecting premium residential projects in Bangalore. Provide personalized support for NRIs and local buyers, from shortlisting to handover.</p>
+        <a href="#">Apply Now</a>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="job-card">
+        <h3>Client Relations Executive</h3>
+        <p>Manage client communications, handle inquiries, and ensure a seamless experience from site visits to post-purchase support.</p>
+        <a href="#">Apply Now</a>
+      </div>
+
+      <!-- <div class="job-card">
+        <h3>Marketing & Content Specialist</h3>
+        <p>Create engaging content, run campaigns, and enhance our digital presence to attract premium clients and showcase top projects.</p>
+        <a href="#">Apply Now</a>
+      </div>
+
+      <div class="job-card">
+        <h3>Operations & Legal Coordinator</h3>
+        <p>Support project documentation, legal compliance, and smooth coordination between clients, developers, and internal teams.</p>
+        <a href="#">Apply Now</a>
+      </div> -->
+
+
+    </div>
   </div>
 </section>
 
-<style>.hero-section {
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.career-section {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.career-section h2 {
+  color: #366aa8;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.career-section .subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.career-section .intro {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.job-openings {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 8%;
-  background: #ffffff;
-  gap: 40px;
-  
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
 }
 
-.hero-content {
-  flex: 1;
-  max-width: 520px;
+.job-card {
+  background-color: #366aa8;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+    max-height: 1000px;
+
+  flex: 1 1 250px;
+  transition: transform 0.3s ease;
 }
 
-.hero-content h4 {
-  font-size: 18px;
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h3 {
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.job-card a {
+  text-decoration: none;
+  color: #ffffff;
   font-weight: 500;
-  margin-bottom: 12px;
-  color: #000;
+  border-bottom: 1px solid #ffffff;
+  transition: color 0.3s, border-color 0.3s;
 }
 
-.hero-content h4 span {
-  color: #3668a3; /* accent color */
-  font-weight: 600;
+.job-card a:hover {
+  color: #8b2b1f;
+  border-color: #8b2b1f;
 }
 
-.hero-content h3 {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 18px;
-  color: #000;
-  line-height: 1.3;
-}
-
-.hero-content p {
-  line-height: 1.7;
-  font-size: 17px;
-  color: #4a4a4a;
-}
-
-.hero-image {
-  flex: 1;
-}
-
-.hero-image img {
-  width: 100%;
-  border-radius: 4px;
-  object-fit: cover;
-}
-
-/* ---------------------------
-   📱 Mobile Responsive Styles
----------------------------- */
+/* Responsive */
 @media (max-width: 768px) {
-  .hero-section {
+  .job-openings {
     flex-direction: column;
-    padding: 40px 6%;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .hero-content {
-    max-width: 100%;
-  }
-
-  .hero-content h3 {
-    font-size: 26px;
-  }
-
-  .hero-content p {
-    font-size: 16px;
-  }
-
-  .hero-image img {
-    max-height: 320px;
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-section {
-    padding: 30px 5%;
-  }
-
-  .hero-content h3 {
-    font-size: 22px;
-  }
-
-  .hero-content h4 {
-    font-size: 16px;
-  }
-
-  .hero-content p {
-    font-size: 15px;
-  }
-
-  .hero-image img {
-    max-height: 260px;
+    align-items: center;
   }
 }
 </style>
+
+
 
 
 
@@ -640,229 +653,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <!-- end logos -->
 
-<section class="banner-section">
-  <div class="banner-left">
-    <img src="newimg/ChatGPT Image Dec 12, 2025, 11_22_38 PM (1).png" alt="Residential project image" />
-  </div>
 
-  <div class="banner-right">
-    <h4><span>Our Mission & Vision</span></h4>
-
-<h3>Building Trust, Transparency & Value in Every Real Estate Journey</h3>
-
-
-    <p>
-      At Real Prop Service, our mission is to redefine real estate consulting in Bangalore through trust, transparency, and innovation. We strive to bridge the gap between developers and buyers—serving both local and NRI clients—ensuring every property transaction is smooth, stress-free, and value-driven.
-
-Our vision is to be recognized among the Top 5 most trusted real estate consultancies in Bangalore, known for our integrity, expertise, and unwavering commitment to a client-first approach for residents and NRIs alike.
-    </p>
-  </div>
-</section>
-
-<style>
-.banner-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 8%;
-  background: #ffffff;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.banner-left {
-  flex: 1 1 420px;
-}
-
-.banner-left img {
-  width: 100%;
-  height: 460px;
-  border-radius: 6px;
-  object-fit: cover;
-}
-
-.banner-right {
-  flex: 1 1 420px;
-  max-width: 520px;
-}
-
-.banner-right h4 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  color: #000;
-}
-
-.banner-right h4 span {
-  color: #3668a3;
-  font-weight: 600;
-}
-
-.banner-right h3 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 18px;
-  color: #000;
-  line-height: 1.3;
-}
-
-.banner-right p {
-  line-height: 1.7;
-  font-size: 17px;
-  color: #4a4a4a;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .banner-section {
-    padding: 40px 6%;
-  }
-
-  .banner-right h3 {
-    font-size: 28px;
-  }
-
-  .banner-left img {
-    height: 340px;
-  }
-}
-</style>
-
-
-
-
-
-<section class="benefits">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-12 wow fadeInUp">
-        <h4><span style="color: #3668a3;">Why Choose</span> Real Prop Service</h4>
-        <h3>Your Trusted Partner in Premium Properties</h3>
-      </div>
-
-      <div class="col wow fadeInUp" data-wow-delay="0s">
-        <figure><img src="images/icon-benefits01.png" alt="Integrity"><b></b></figure>
-        <h6>Integrity</h6>
-        <p>Fair and ethical practices always.</p>
-      </div>
-
-      <div class="col wow fadeInUp" data-wow-delay="0.05s">
-        <figure><img src="images/icon-benefits02.png" alt="Customer-Centricity"><b></b></figure>
-        <h6>Customer-Centricity</h6>
-        <p>Your needs come first.</p>
-      </div>
-
-      <div class="col wow fadeInUp" data-wow-delay="0.10s">
-        <figure><img src="images/icon-benefits03.png" alt="Professionalism"><b></b></figure>
-        <h6>Professionalism</h6>
-        <p>Reliable and consistent service.</p>
-      </div>
-
-      <div class="col wow fadeInUp" data-wow-delay="0.15s">
-        <figure><img src="images/icon-benefits04.png" alt="Transparency"><b></b></figure>
-        <h6>Transparency</h6>
-        <p>Clarity in pricing, process & commitments.</p>
-      </div>
-
-      <div class="col wow fadeInUp" data-wow-delay="0.20s">
-        <figure><img src="images/icon-benefits05.png" alt="Innovation"><b></b></figure>
-        <h6>Innovation</h6>
-        <p>Tech-driven tools and strategies for better experiences.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="milestones">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-12 wow fadeInUp">
-        <h4><span style="color: #3668a3;">Milestones</span> – Our Achievements</h4>
-        <h3>Celebrating Our Journey of Excellence</h3>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0s">
-        <div class="milestone-box">
-          <h2>5000+</h2>
-          <p>Satisfied customers</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.05s">
-        <div class="milestone-box">
-          <h2>50+</h2>
-          <p>Authorized builder partnerships</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.10s">
-        <div class="milestone-box">
-          <h2>Exclusive</h2>
-          <p>Pre-launch deals & strategic tie-ups</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.15s">
-        <div class="milestone-box">
-          <h2>Referral Growth</h2>
-          <p>Strong repeat and referral-driven business</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<style>.milestones {
-  padding: 80px 0;
-  background: #f7f9fc;
-  text-align: center;
-}
-
-.milestones h4 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.milestones h3 {
-  font-size: 30px;
-  margin-bottom: 40px;
-  font-weight: 700;
-}
-
-.milestone-box {
-  background: #ffffff;
-  padding: 30px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
-}
-
-.milestone-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-.milestone-box h2 {
-  font-size: 36px;
-  color: #3668a3;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-.milestone-box p {
-  font-size: 16px;
-  color: #333;
-  margin: 0;
-}
-</style>
 
 
 

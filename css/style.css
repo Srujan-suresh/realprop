@@ -909,12 +909,14 @@ button[type=submit] {
   position: absolute;
   left: 0;
   top: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     160deg,
     #3668a3 0%,
     #3668a3 50%,
     #3b6ea5 100%
-  );
+  ); */
+    background: rgba(0, 0, 0, 0.3); /* black overlay with 50% opacity */
+
   opacity: 0.75;
 }
 
